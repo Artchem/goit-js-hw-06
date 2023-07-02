@@ -1,1 +1,1 @@
-# Tutorial
+# goit-js
