@@ -28,19 +28,11 @@ console.dir(inputValueRef);
 console.dir(btnCreateRef);
 console.dir(btnDestroyRef);
 
-// inputValueRef.addEventListener('input', onInputValueClick);
-// function onInputValueClick(event) {
-//   console.dir(event.currentTarget.value);
-// }
-
 btnCreateRef.addEventListener('click', onBtnCreateClick);
 function onBtnCreateClick() {
-  // console.dir(event.currentTarget);
-  // console.dir(inputValueRef.value);
   createBoxes(inputValueRef.value);
 }
 
-//
 btnDestroyRef.addEventListener('click', onBtnDestroyClick);
 function onBtnDestroyClick() {
   boxesRef.innerHTML = '';
@@ -72,5 +64,3 @@ function createBoxes(amount) {
       .padStart(6, 0)}`;
   }
 }
-
-// console.log(createBoxes(5));
