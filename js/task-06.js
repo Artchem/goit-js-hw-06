@@ -20,7 +20,11 @@ function onBlurInput(event) {
   const inputValueLength = event.currentTarget.value.length;
   const lengthData = Number(inputBlur.dataset.length);
 
-  inputValueLength !== lengthData
-    ? inputBlur.classList.add('invalid')
-    : inputBlur.classList.add('valid');
+  if (inputValueLength !== lengthData) {
+    inputBlur.classList.add('invalid');
+    inputBlur.classList.remove('valid');
+  } else {
+    inputBlur.classList.add('valid');
+    inputBlur.classList.remove('invalid');
+  }
 }
